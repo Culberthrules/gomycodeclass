@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device, initial-scale=1.0" />
+<title>My portfolio</title>
+<style>
+    body {
+        background-color:antiquewhite    }
+    body{
+        font-family:Georgia, 'Times New Roman', Times serif 
+    margin: 0;
+    padding: 0;
+    }
+    header, nav, section, footer{
+        padding: 20px;
+    }
+ nav{
+    background-color:darkgray
+ }   
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+    padding:0;
+}
+nav ul li a:{
+    color:black;
+    text-decoration:none;
+    padding: 10px;
+}
+nav ul li a:hover{
+    background: color #555;
+}
+section{
+    border-bottom: 1px solid #ccc;
+}
+table{
+    border: 1px solid black
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, td {
+    padding: 10px;
+    text-allign: left;
+}
+    </style>
+    </head>
+<body>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+<p>Explore my work, experience and get in touch!</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#home"><img src="media/home-security_2185959.png" alt="Home" width="20" /></a></li>
+<li><a href="#about"><img src="media/info_11584439.png" alt="About" width="20" /></a></li>
+<li><a href="#work"><img src="media/work_16405644.png" alt="Work" width="20" /></a></li>
+<li><a href="#resume"><img src="media/cv.png" alt="Resume" width="20" /></a></li>
+<li><a href="#contact"><img src="media/contact-us.png" alt="Contact" width="20" /></a></li>
+    </ul>
+</nav>
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <video width="320" height="240" controls>
+            <source src="media/The Thundermans - Undercover - S01E05 HD (TvShows4Mobile.Com) otv-vylgp.mp4" type="video/mp4"
+        </video>
+        <audio controls>
+            <source src="media/Rema-HOV-(TrendyBeatz.com).mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="media/WhatsApp Image 2025-07-15 at 09.56.51_603df290.jpg" alt="My Profile Picture" width="200" />
+        <p>Hello! I'm a passionate developer witha love for clean code and creative design</p>
+        <ul>
+            <li>Location; Lagos, Nigeria</li>
+            <li>Skills; HTML, CSS, Javascript, Python</li>
+            <li>Hobies; playin games, traveling, music, watching movies</li>
+        </ul>
+    </section>
+    <section id="work">
+        <h2>My Work</h2>
+        <div>
+            <img src="media/Screenshot 2025-08-13 162030.jpeg" alt="git Screenshot" width="300" />
+        </div>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Position</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Frontend Developer</td>
+                    <td>TechNova</td>
+                </tr>
+                <tr>
+                    <td>2023-2024</td>
+                    <td>Full Stack Developer</td>
+                    <td>CodeCraft</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+<h2>Contact Me</h2>
+<form action="submit_form.html" method="post">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required/><br /><br />
+    <label for="email">Email:</label><br /
+    <input type="email" id="email" name="email" required/><br /><br />
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
+    <input type="submit" value="Send Message" />
+</form>
+    </section>
+</main>
+
+<footer>
+    <p>copy; 2025 My Portfolio. All rights reserved Myogamisama </p>
+
+</footer>
+</body>
+</html>
