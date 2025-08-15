@@ -6,7 +6,7 @@
 <title>My portfolio</title>
 <style>
     body {
-        background-color:antiquewhite    }
+        background-color: antiquewhite; /* Set page background to antique white */}
     body{
         font-family:Georgia, 'Times New Roman', Times serif 
     margin: 0;
@@ -48,13 +48,15 @@ table th, td {
     </style>
     </head>
 <body>
+    <!--header section with  site title and intro-->
 <header>
     <h1>Welcome to My Portfolio</h1>
 <p>Explore my work, experience and get in touch!</p>
 </header>
+<!--navigation bar with icons-->
 <nav>
     <ul>
-        <li><a href="#home"><img src="media/home-security_2185959.png" alt="Home" width="20" /></a></li>
+        <li><a href="#home"><img src="media/home-security_2185959.png" alt="Home" width="20" /></a></li><!--icons added in media folder -->
 <li><a href="#about"><img src="media/info_11584439.png" alt="About" width="20" /></a></li>
 <li><a href="#work"><img src="media/work_16405644.png" alt="Work" width="20" /></a></li>
 <li><a href="#resume"><img src="media/cv.png" alt="Resume" width="20" /></a></li>
@@ -62,15 +64,17 @@ table th, td {
     </ul>
 </nav>
 <main>
+    <!--home section with video and audio files-->
     <section id="home">
         <h2>Home</h2>
         <video width="320" height="240" controls>
-            <source src="media/The Thundermans - Undercover - S01E05 HD (TvShows4Mobile.Com) otv-vylgp.mp4" type="video/mp4"
-        </video>
+            <source src="media/The Thundermans - Undercover - S01E05 HD (TvShows4Mobile.Com) otv-vylgp.mp4" type="video/mp4"--><!--video file-->       
+         </video>
         <audio controls>
-            <source src="media/Rema-HOV-(TrendyBeatz.com).mp3" type="audio/mpeg">
+            <source src="media/Rema-HOV-(TrendyBeatz.com).mp3" type="audio/mpeg"><!--audio file-->
         </audio>
     </section>
+    <!--About section with profile image and details-->
     <section id="about">
         <h2>About Me</h2>
         <img src="media/WhatsApp Image 2025-07-15 at 09.56.51_603df290.jpg" alt="My Profile Picture" width="200" />
@@ -81,12 +85,14 @@ table th, td {
             <li>Hobies; playin games, traveling, music, watching movies</li>
         </ul>
     </section>
+    <!--work section with project screenshot-->
     <section id="work">
         <h2>My Work</h2>
         <div>
             <img src="media/Screenshot 2025-08-13 162030.jpeg" alt="git Screenshot" width="300" />
         </div>
     </section>
+    <!--Resume section with experience table-->
     <section id="resume">
         <h2>Resume</h2>
         <table>
@@ -111,12 +117,13 @@ table th, td {
             </tbody>
         </table>
     </section>
+    <!--contact section with form-->
     <section id="contact">
 <h2>Contact Me</h2>
 <form action="submit_form.html" method="post">
     <label for="name">Name:</label><br />
     <input type="text" id="name" name="name" required/><br /><br />
-    <label for="email">Email:</label><br /
+    <label for="email">Email:</label><br />
     <input type="email" id="email" name="email" required/><br /><br />
     <label for="message">Message:</label><br />
     <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
@@ -124,9 +131,10 @@ table th, td {
 </form>
     </section>
 </main>
+<!--footer section-->
 
 <footer>
-    <p>copy; 2025 My Portfolio. All rights reserved Myogamisama </p>
+    <p>&copy; 2025 My Portfolio. All rights reserved Myogamisama </p>
 
 </footer>
 </body>
