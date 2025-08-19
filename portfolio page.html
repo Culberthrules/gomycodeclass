@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device, initial-scale=1.0" />
 <title>My portfolio</title>
 <style>
+     /* unvisited link */
+      a:link {
+          color: tomato;
+      }
+      /* visited link */
+      a:visited {
+          color: tomato;
+      }
+      /* mouse over element */
+      div:hover {
+          color: tomato;
+      } 
+      /* selected link */
+      a:active{
+          color: #0000FF
+      }
     body {
-        background-color: antiquewhite; /* Set page background to antique white */}
-    body{
-        font-family:Georgia, 'Times New Roman', Times serif 
-    margin: 0;
-    padding: 0;
+        background-color: antiquewhite; /* Set page background to antique white */
+        font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
     }
     header, nav, section, footer{
         padding: 20px;
@@ -25,36 +42,36 @@ nav ul{
     margin:0;
     padding:0;
 }
-nav ul li a:{
-    color:black;
-    text-decoration:none;
+ nav ul li a {
+    color: black;
+    text-decoration: none;
     padding: 10px;
 }
 nav ul li a:hover{
-    background: color #555;
+    background-color: #555;
 }
-section{
+ section {
     border-bottom: 1px solid #ccc;
 }
-table{
-    border: 1px solid black
+ table {
+    border: 1px solid black;
     width: 100%;
     border-collapse: collapse;
 }
 table th, td {
     padding: 10px;
-    text-allign: left;
+    text-align: left;
 }
     </style>
     </head>
 <body>
     <!--header section with  site title and intro-->
-<header>
+<header class="portfolio-header">
     <h1>Welcome to My Portfolio</h1>
 <p>Explore my work, experience and get in touch!</p>
 </header>
 <!--navigation bar with icons-->
-<nav>
+<nav class="portfolio-nav">
     <ul>
         <li><a href="#home"><img src="media/home-security_2185959.png" alt="Home" width="20" /></a></li><!--icons added in media folder -->
 <li><a href="#about"><img src="media/info_11584439.png" alt="About" width="20" /></a></li>
@@ -63,9 +80,9 @@ table th, td {
 <li><a href="#contact"><img src="media/contact-us.png" alt="Contact" width="20" /></a></li>
     </ul>
 </nav>
-<main>
+<main class="portfolio-main">
     <!--home section with video and audio files-->
-    <section id="home">
+    <section id="home" class="home-section">
         <h2>Home</h2>
         <video width="320" height="240" controls>
             <source src="media/The Thundermans - Undercover - S01E05 HD (TvShows4Mobile.Com) otv-vylgp.mp4" type="video/mp4"--><!--video file-->       
@@ -75,27 +92,27 @@ table th, td {
         </audio>
     </section>
     <!--About section with profile image and details-->
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <img src="media/WhatsApp Image 2025-07-15 at 09.56.51_603df290.jpg" alt="My Profile Picture" width="200" />
+    <img src="media/WhatsApp Image 2025-07-15 at 09.56.51_603df290.jpg" alt="My Profile Picture" width="200" class="profile-image" />
         <p>Hello! I'm a passionate developer witha love for clean code and creative design</p>
-        <ul>
+    <ul class="about-list">
             <li>Location; Lagos, Nigeria</li>
             <li>Skills; HTML, CSS, Javascript, Python</li>
             <li>Hobies; playin games, traveling, music, watching movies</li>
         </ul>
     </section>
     <!--work section with project screenshot-->
-    <section id="work">
+    <section id="work" class="work-section">
         <h2>My Work</h2>
-        <div>
-            <img src="media/Screenshot 2025-08-13 162030.jpeg" alt="git Screenshot" width="300" />
+    <div class="work-image-container">
+            <img src="media/Screenshot 2025-08-13 162030.jpeg" alt="git Screenshot" width="300" class="work-image" />
         </div>
     </section>
     <!--Resume section with experience table-->
-    <section id="resume">
+    <section id="resume" class="resume-section">
         <h2>Resume</h2>
-        <table>
+    <table class="resume-table">
             <thead>
                 <tr>
                     <th>Year</th>
@@ -118,22 +135,22 @@ table th, td {
         </table>
     </section>
     <!--contact section with form-->
-    <section id="contact">
+    <section id="contact" class="contact-section">
 <h2>Contact Me</h2>
-<form action="submit_form.html" method="post">
+<form action="submit_form.html" method="post" class="contact-form">
     <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" required/><br /><br />
+    <input type="text" id="name" name="name" required class="form-input"/><br /><br />
     <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" required/><br /><br />
+    <input type="email" id="email" name="email" required class="form-input"/><br /><br />
     <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br /><br />
-    <input type="submit" value="Send Message" />
+    <textarea id="message" name="message" rows="5" cols="30" required class="form-textarea"></textarea><br /><br />
+    <input type="submit" value="Send Message" class="form-submit" />
 </form>
     </section>
 </main>
 <!--footer section-->
 
-<footer>
+<footer class="portfolio-footer">
     <p>&copy; 2025 My Portfolio. All rights reserved Myogamisama </p>
 
 </footer>
